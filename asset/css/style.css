@@ -16,6 +16,9 @@ body{
     font-family: "Sora", sans-serif;
 }
 /* common */
+a{
+    text-decoration: none;
+}
 .container{
     width: 1110px;
     min-width:calc(100% - 48px);
@@ -24,7 +27,8 @@ body{
 }
 /* header */
 .header{
-    min-width: 100vh;
+    padding-top:30px;
+    min-height: 100vh;
     background:var(--color-header);
 }
 .logo{
@@ -67,3 +71,67 @@ body{
      font-weight: 300;
      margin-left:auto;
 }
+.header-top{
+    position: sticky;
+    top:-30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__list{
+    display:flex;
+}
+.nav__item{
+    padding:8px 21px;
+}
+.header-action__login,
+.nav__link{
+    color: #FFF;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 28px; 
+}
+.nav__item--active::before{
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 6px;
+    height:6px;
+    border-radius: 50%;
+    background-color: #fff;
+    top:-2px;
+    left:-3px;
+}
+.nav__item:hover,
+.nav__item--active{
+    text-shadow: 1px 0 0 currentColor;
+}
+.header-action__login{
+    margin-right:24px;
+}
+.header-action{
+    display:flex;
+    align-items: center;
+    gap:7px;
+}
+.btn{
+    --height:60px;
+    min-width: 205px;
+    height: var(--height);
+    line-height: var(--height);
+    border-radius: 999px;
+    background: #2E80CE;
+    border: #2E80CE;
+}
+.btn:hover{
+    opacity: 0.9;
+}
+.header-action__signup{
+    color: #FFF;
+    font-size: 1.6rem;
+    font-weight: 400;
+    min-width: 104px;
+    --height: 44px;
+}
+
