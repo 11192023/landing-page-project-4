@@ -134,4 +134,69 @@ a{
     min-width: 104px;
     --height: 44px;
 }
-
+/* hero */
+.hero{
+    margin-top:76px;
+    padding-bottom: 110px;
+    display:flex;
+    align-items: center;
+}
+.hero__content{
+    flex-shrink: 0;
+    width:41%
+}
+.hero__media{
+    flex-grow: 1;
+}
+.hero__img{
+    min-width: 330px;
+    height: 540px;
+    border-radius: 6px;
+}
+.hero__images{
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.hero__heading{
+    color: #FFF;
+    font-size: 7.0rem;
+    font-weight: 600;
+    line-height: 80px; /* 114.286% */
+    letter-spacing: -1.4px;
+}
+.hero__desc{
+    margin-top:22px;
+    color: #C9D2DA;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 30px; /* 166.667% */
+}
+.hero__row{
+    margin-top:38px;
+    display: flex;
+    align-items: center;
+    gap:38px;
+}
+.hero__btn{
+    color: #FFF;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+}
+.hero__phone{
+    color: #FFF;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 30px; /* 166.667% */
+}
+.hero__img:last-child{
+    min-width: 210px;
+    height: 410px;
+}
+.hero__img:first-child{
+    position:relative;
+    margin-right:-6px
+}
