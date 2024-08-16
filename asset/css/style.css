@@ -455,5 +455,47 @@ a{
     color:white;
     background-color: #0F1B4C;
 }
-
+/* install */
+.install-app{
+    padding-top: 170px;
+}
+.install-app__row{
+    margin-top:95px;
+    display: flex;
+    align-items: center;
+    background-color: #2E80CE;
+    padding:75px 70px;
+     position:relative;
+}
+.install-app__content{
+    width:56%;
+}
+.install-app__image{
+    flex-grow: 1;
+}
+.install-app__app{
+    position:absolute;
+    bottom: 0;
+}
+.install-app__heading{
+    color: #FFF;
+    max-width: 489px;
+    font-size: 5.0rem;
+    font-weight: 600;
+    line-height: 1.2; /* 120% */
+    letter-spacing: -1px;
+}
+.install-app__desc{
+    margin-top:18px;
+    color: #FFF;
+    max-width: 586px;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.67; /* 166.667% */
+}
+.install-app__link{
+    margin-top:38px;
+    display:flex;
+    gap:18px;
+}
 
